@@ -1,0 +1,80 @@
+<div class="container my-5">
+    <h2 class="text-center text-warning mb-4">Contact Us</h2>
+    <p class="text-center text-light">We’d love to hear from you! Fill out the form below and we’ll get back to you as
+        soon as possible.</p>
+
+    <!-- Contact Form  -->
+    <form (ngSubmit)="send()" [formGroup]="form" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+            <label class="form-label text-light">Name</label>
+            <input type="text" class="form-control" formControlName="name" name="name" required>
+        </div>
+
+        <!-- Email + Phone Row -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label text-light">Email</label>
+                <input type="email" class="form-control" formControlName="email" name="email" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label text-light">Phone</label>
+                <input type="tel" class="form-control" formControlName="phone" name="phone"
+                    placeholder="e.g. (218) 849-1239" required>
+            </div>
+        </div>
+
+
+        <!-- Dropdown for Services -->
+        <div class="mb-3">
+            <label class="form-label text-light">Service Interested In</label>
+            <select class="form-select" formControlName="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Lawn Care">Lawn Care</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Snow Removal">Snow Removal</option>
+                <option value="Power Washing">Power Washing</option>
+                <option value="Pet Care">Pet Care</option>
+                <option value="Request Other Service">Request Other Service</option>
+            </select>
+        </div>
+
+        <!-- Estimated Hours -->
+        <div class="mb-3">
+            <label class="form-label text-light">Estimated Hours Of Service</label>
+            <input type="number" class="form-control" formControlName="hours" name="hours" min="1" placeholder="e.g. 2">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label text-light">Message</label>
+            <textarea class="form-control" rows="5" formControlName="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-warning w-100">Send Message</button>
+    </form>
+    <!-- Divider -->
+    <hr class="my-5 border-light">
+
+    <!-- Contact Info Section -->
+    <div class="text-center">
+        <h4 class="text-warning mb-3">Get in Touch</h4>
+        <p class="text-light mb-1">
+            <strong>Email: </strong> <a class="text-warning text-decoration-none">dplusdservices@gmail.com</a>
+        </p>
+        <p class="text-light mb-4">
+            <strong>Phone:</strong> <a class="text-warning text-decoration-none"> (218) 849-1239,
+                (701) 561-9307</a>
+        </p>
+
+        <!-- Social Media Links -->
+        <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.instagram.com/dplusdservices/" target="_blank" class="text-warning fs-4"><i
+                    class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/DplusDservices" target="_blank" class="text-warning fs-4"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://x.com/DplusDservices" target="_blank" class="text-warning fs-4"><i
+                    class="bi bi-twitter"></i></a>
+            <a href="https://www.tiktok.com/@dplusd.services" target="_blank" class="text-warning fs-4"><i
+                    class="bi bi-tiktok"></i></a>
+        </div>
+    </div>
+</div>

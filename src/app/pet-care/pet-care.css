@@ -1,0 +1,22 @@
+.container {
+  padding: 30px;
+}
+
+img {
+  object-fit: cover;
+}
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.container {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+}

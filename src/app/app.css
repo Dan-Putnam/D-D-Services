@@ -1,0 +1,21 @@
+.bg-black {
+  background-color: #000 !important;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important; 
+}
+
+.navbar .dropdown-menu {
+  background-color: #000;          /* black like navbar */
+  border: 1px solid #ffc107;       /* yellow border */
+}
+
+.navbar .dropdown-item {
+  color: #ffc107;                  /* yellow text */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #ffc107;       /* yellow hover */
+  color: #000;                     /* black text on hover */
+}
